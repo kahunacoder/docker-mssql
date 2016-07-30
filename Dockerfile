@@ -8,8 +8,3 @@ RUN apt-get update && apt-get install -y \
 	freetds-bin \
 	unixodbc \
 	tdsodbc
-
-VOLUME [
-	'./docker/freetds/:/etc/freetds/freetds/',
-	'./docker/odbcinst/odbcinst.ini:/etc/odbcinst.ini'
-]
